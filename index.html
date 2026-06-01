@@ -137,7 +137,40 @@ a i {
             z-index: 1000;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
+/* Principal Section */
+.principal-section {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
 
+    display: flex;
+    flex-direction: column; /* Vertical Layout */
+    align-items: center;
+    gap: 10px;
+}
+
+.principal-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 4px solid #0d6efd;
+}
+
+.principal-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.principal-info p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
         .header-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -2390,7 +2423,7 @@ body {
     <i class="fa-brands fa-whatsapp"></i> 9131363656
 </a>
                 <a href="mailto:avmgroupbpl@gmail.com">📧 avmgroupbpl@gmail.com</a>
-                <span>⏰ 08:00 AM - 02:00 PM</span>
+                <span>⏰ 09:00 AM - 02:00 PM</span>
             </div>
           <div class="social-icons">
      <a href="https://facebook.com/AVMGroupofEducation" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
@@ -2439,7 +2472,9 @@ body {
   <!-- IMAGE SLIDER -->
     <div class="image-slider">
         <div class="slider-container">
-
+<div class="slide active">
+                <img src="/assests/scholarship slider.png" alt="School">
+            </div>
             <div class="slide active">
                 <img src="/assests/slider11.png" alt="School">
             </div>
@@ -3271,26 +3306,40 @@ The entire campus is monitored with advanced CCTV cameras ensuring student safet
 
         <div class="branch-grid">
 
-            <!-- SCHOOL -->
-            <div class="branch-card">
-                <div class="branch-image">
-                    <img src="/assests/genius_kids.jpeg" alt="School">
-                </div>
+           <!-- SCHOOL -->
+<div class="branch-card">
+    
+    <div class="branch-image">
+        <img src="/assests/genius_kids.jpeg" alt="School">
+    </div>
 
-                <div class="branch-content">
-                    <h3>Genius Kids School, Nehru Nagar, Bhopal</h3>
-                    <p class="branch-tag">Pre-Nursery to KG-2</p>
+    <div class="branch-content">
+        <h3>Genius Kids School, Nehru Nagar, Bhopal</h3>
+        <p class="branch-tag">Pre-Nursery to KG-2</p>
 
-                    <ul>
-                        <li>Pre-Nursery, Nursery</li>
-                        <li>KG-1 & KG-2</li>
-                        <li>Smart classrooms</li>
-                        <li>Activity-based learning</li>
-                    </ul>
+        <ul>
+            <li>Pre-Nursery, Nursery</li>
+            <li>KG-1 & KG-2</li>
+            <li>Smart classrooms</li>
+            <li>Activity-based learning</li>
+        </ul>
 
-                  <button class="cta-button" onclick="openModal('applyModal')">Apply Online</button>
-                </div>
+        <!-- Principal Section -->
+        <div class="principal-section">
+            <img src="/assests/principle-genius kids.png" alt="Principal" class="principal-image">
+
+            <div class="principal-info">
+                <h4>Mrs. Rekha Jain</h4>
+                <p>Principal</p>
             </div>
+        </div>
+
+        <button class="cta-button" onclick="openModal('applyModal')">
+            Apply Online
+        </button>
+    </div>
+
+</div>
 
             <!-- INSTITUTE -->
             <div class="branch-card">
