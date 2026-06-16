@@ -1118,25 +1118,31 @@ max-width: 320px;
 }
 
         /* ===== LEADERSHIP SECTION ===== */
-        .leadership-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 2rem;
-            align-items: center;
-            
-            padding: 3rem;
-            border-radius: 15px;
-            min-height: 500px;
-        }
+   .leadership-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    border-radius: 15px;
+    align-items: stretch;
+}
 
-        @media (max-width: 768px) {
-            .leadership-container {
-                grid-template-columns: 1fr;
-                min-height: auto;
-                padding: 2rem;
-            }
-        }
+       /* Tablet */
+@media (max-width: 992px) {
+    .leadership-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .leadership-container {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+}
 
         .leader-card {
             background: var(--white);
@@ -2473,19 +2479,17 @@ body {
     <div class="image-slider">
         <div class="slider-container">
 <div class="slide active">
-                <img src="/assests/scholarship slider.png" alt="School">
+                <img src="/assests/slider21.png" alt="School">
             </div>
-            <div class="slide active">
-                <img src="/assests/slider11.png" alt="School">
-            </div>
+            
  <div class="slide">
                 <img src="/assests/slider12.png" alt="School">
             </div>
           <div class="slide">
-             <img src="/assests/slide14.png" alt="School">
+             <img src="/assests/scholarship slider.png" alt="School">
             </div>
-              <div class="slide">
-                <img src="/assests/slider13.png" alt="School">
+               <div class="slide">
+                <img src="/assests/hiringslider.png" alt="School">
             </div>
               
             </div>
@@ -2516,15 +2520,11 @@ body {
             </div>
              <div class="slide">
                 <img src="/assests/newslider8.jpeg" alt="School">
-            </div>
+            </div> 
 
         </div>
 
-        <!-- ✅ ARROWS (INSIDE SLIDER) -->
-        <div class="slider-arrows">
-            <div class="arrow left">&#10094;</div>
-            <div class="arrow right">&#10095;</div>
-        </div>
+     
 
     </div>
 
@@ -2670,9 +2670,21 @@ body {
                             <img src="/assests/jainsir.png" alt="teachers">
                         </div>
                         <div class="leader-content">
-                            <h3 style="margin-top: 0;">Chairman of AVM Group</h3>
-                            <p class="leader-name">Mr. Shailesh Jain</p>
+                               <p class="leader-name">Mr. Shailesh Jain</p>
+                            <h3 style="margin-top: 0;">Director of AVM Group</h3>
+                         
                             <p class="leader-message">"Education is the key to unlocking infinite possibilities. We are committed to providing an environment where every student can flourish and achieve their dreams with confidence and integrity."</p>
+                        </div>
+                    </div>
+                     <div class="leader-card">
+                        <div class="leader-image">
+                           <img src="/assests/principle-genius kids.png" alt="Principal" >
+                        </div>
+                        <div class="leader-content">
+                            <p class="leader-name">Mrs. Rekha Jain</p>
+                            <h3 style="margin-top: 0;">Principle at Genius Kids School</h3>
+                            
+                            <p class="leader-message">"Every child is unique and full of potential. At our playschool, we nurture young minds with love, creativity, and joyful learning to build a strong foundation for their bright future."</p>
                         </div>
                     </div>
                     <div class="leader-card">
@@ -2680,8 +2692,9 @@ body {
                             <img src="/assests/PrincipleMam.jpeg" alt="teachers">
                         </div>
                         <div class="leader-content">
-                            <h3 style="margin-top: 0;">Principal at AVM Sr. Sec. School</h3>
                             <p class="leader-name">Mrs. Vandana Sen</p>
+                            <h3 style="margin-top: 0;">Principal at AVM Sr. Sec. School</h3>
+                           
                             <p class="leader-message">"Our mission is to transform lives through quality education. We believe in nurturing critical thinkers, ethical leaders, and compassionate citizens who will contribute positively to society."</p>
                         </div>
                     </div>
@@ -3310,7 +3323,7 @@ The entire campus is monitored with advanced CCTV cameras ensuring student safet
 <div class="branch-card">
     
     <div class="branch-image">
-        <img src="/assests/genius_kids.jpeg" alt="School">
+        <img src="/assests/slider21.png" alt="School">
     </div>
 
     <div class="branch-content">
@@ -3324,15 +3337,7 @@ The entire campus is monitored with advanced CCTV cameras ensuring student safet
             <li>Activity-based learning</li>
         </ul>
 
-        <!-- Principal Section -->
-        <div class="principal-section">
-            <img src="/assests/principle-genius kids.png" alt="Principal" class="principal-image">
-
-            <div class="principal-info">
-                <h4>Mrs. Rekha Jain</h4>
-                <p>Principal</p>
-            </div>
-        </div>
+    
 
         <button class="cta-button" onclick="openModal('applyModal')">
             Apply Online
@@ -3538,8 +3543,7 @@ The entire campus is monitored with advanced CCTV cameras ensuring student safet
                 <p>Enroll now from Nursery to Class 12. Limited seats available. Secure your child’s future with quality education and excellence.</p>
 
                 <button class="cta-button" onclick="openModal('applyModal')">Apply Now</button>
-
-                   <img src="/assests/scholarship slider.png"  class="notice-banner">
+                <img src="/assests/scholarship slider.png" class="notice-banner">
             </div>
 
            
