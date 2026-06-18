@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVM Sr. Sec. School - Best School in Bhopal MP</title>
-     <title>AVM Sr. Sec. School - Best School in Madhya Pradesh</title>
-     <title>AVM Sr. Sec. School - Best MP Board School</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <style>
@@ -1062,61 +1060,103 @@ max-width: 320px;
             color: white;
             transform: scale(1.15);
         }
-
-        /* ===== FACILITIES GRID ===== */
-        .facilities-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-       
-        .facility-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-.facility-icon {
-    width: 100%;
-    height: 180px; /* slightly increased for better visibility */
-    overflow: hidden; /* prevents overflow */
-    display: block;
-    background: none; /* remove gradient if using image */
-    padding: 0; /* remove flex padding behavior */
+/* FACULTY GRID */
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
-.facility-icon img {
+/* CARD */
+.faculty-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE CONTAINER */
+.faculty-image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+/* IMAGE */
+.faculty-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* important: keeps image proportional */
     display: block;
+
+    /* SHOW COMPLETE IMAGE */
+    object-fit: contain;
+    object-position: center top;
+
+    background: #f5f5f5;
 }
 
-.facility-card {
-    display: flex;
-    flex-direction: column;
-    background: var(--white);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s;
-    border-top: 4px solid var(--accent-color);
+/* CONTENT */
+.faculty-content {
+    padding: 18px;
 }
 
-.facility-content {
-    padding: 1.5rem;
-    flex-grow: 1; /* prevents overlap */
+.faculty-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f3b73;
+    margin-bottom: 6px;
 }
 
-.facility-content h3 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+.faculty-subject {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
 }
 
-.facility-content p {
-    color: var(--text-light);
+.faculty-experience {
     font-size: 0.9rem;
-    line-height: 1.6;
+    color: #777;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .faculty-image {
+        height: 280px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .faculty-image {
+        height: 240px;
+    }
+
+    .faculty-content {
+        padding: 14px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faculty-image {
+        height: 320px;
+    }
 }
 
         /* ===== LEADERSHIP SECTION ===== */
@@ -3564,9 +3604,9 @@ The entire campus is monitored with advanced CCTV cameras ensuring student safet
                 <div class="prayer-card">
               
                     <div class="prayer-content">
-                        <h3>Monday- हे शारदे माँ</h3>
+                        <h3>Monday-  Hey Sharde Maa</h3>
                         <p class="prayer-text">
-           
+             हे शारदे माँ
 
 हे शारदे माँ - हे शारदे माँ ,
 अज्ञानता से हमें तार दे माँ 
@@ -3590,9 +3630,9 @@ The entire campus is monitored with advanced CCTV cameras ensuring student safet
                 <div class="prayer-card">
                 
                     <div class="prayer-content">
-                        <h3>Tuesday - मंगल भावना</h3>
+                        <h3>Tuesday - Mangal Gaan</h3>
                         <p class="prayer-text">
-
+मंगल भावना
 मंगल-मंगल होय जगत में, सब मंगलमय होय।
 इस धरती के हर प्राणी का, मन मंगलमय होय।। 
 ----------------
@@ -3628,7 +3668,7 @@ The entire campus is monitored with advanced CCTV cameras ensuring student safet
                     <div class="prayer-content">
                         <h3>Wednesday - We shall Overcome</h3>
                         <p class="prayer-text">
-                     
+                       We shall overcome
 We shall overcome.
 We shall overcome.
 We shall overcome some day.
@@ -3658,7 +3698,7 @@ We shall overcome some day.
                     <div class="prayer-content">
                         <h3>Thursday -  Grant us strength, O God</h3>
                         <p class="prayer-text">
-                        Grant us strength, O God
+                        Grant us strength, O God,
 So that our faith never becomes weak.
 May we always walk on the right path,
 And never do anything wrong, even by mistake.
@@ -3745,7 +3785,7 @@ So that our faith never becomes weak.
                 <div class="prayer-card">
                   
                     <div class="prayer-content">
-                        <h3>Saturday- O God, my father</h3>
+                        <h3>Saturday- We Shall Overcome</h3>
                         <p class="prayer-text">
 O God, my Father / you are the source / of all knowledge and truth. / I believe / that I am now in your presence / help me / to study my lessons well. / Enlighten my mind / strengthen my memory / and guide my will / towards what is right. / Make me good / honest and obedient / kind and helpful to all / grant that I may never offend you / in my thoughts, words or deeds / I ask you to bless me / my parents, teachers and friends, and all who care for me / I want to be a credit / to my family, my school and my teachers / and all who are helping to educate me.
                             </p>
